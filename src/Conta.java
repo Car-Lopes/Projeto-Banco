@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Conta<cliente> implements IConta{
 
     private static final int AGENCIA_PADRAO = 1;
@@ -7,7 +10,6 @@ public abstract class Conta<cliente> implements IConta{
     protected int numConta;
     protected double saldo;
     protected Cliente cliente;
-
 
     public Conta(Cliente cliente) {
         this.agencia = AGENCIA_PADRAO;
